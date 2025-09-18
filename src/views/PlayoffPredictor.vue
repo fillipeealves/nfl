@@ -60,32 +60,32 @@
       <!-- AFC -->
       <div class="round">
         <h3>AFC Wild Card</h3>
-        <div class="matchup" v-if="afcSeeds.length">
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('AFC', 'Divisional', afcSeeds[1], afcSeeds[6], afcSeeds[1])">
+        <div class="matchup">
+          <div class="slot" @click="bracketUnlocked && afcSeeds[1] && afcSeeds[6] && pickMatchupWinner('AFC', 'Divisional', afcSeeds[1], afcSeeds[6], afcSeeds[1])">
             <img v-if="afcSeeds[1]" :src="afcSeeds[1].WikipediaLogoUrl" />
             <span v-else>2</span>
           </div>
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('AFC', 'Divisional', afcSeeds[1], afcSeeds[6], afcSeeds[6])">
+          <div class="slot" @click="bracketUnlocked && afcSeeds[1] && afcSeeds[6] && pickMatchupWinner('AFC', 'Divisional', afcSeeds[1], afcSeeds[6], afcSeeds[6])">
             <img v-if="afcSeeds[6]" :src="afcSeeds[6].WikipediaLogoUrl" />
             <span v-else>7</span>
           </div>
         </div>
-        <div class="matchup" v-if="afcSeeds.length">
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('AFC', 'Divisional', afcSeeds[2], afcSeeds[5], afcSeeds[2])">
+        <div class="matchup">
+          <div class="slot" @click="bracketUnlocked && afcSeeds[2] && afcSeeds[5] && pickMatchupWinner('AFC', 'Divisional', afcSeeds[2], afcSeeds[5], afcSeeds[2])">
             <img v-if="afcSeeds[2]" :src="afcSeeds[2].WikipediaLogoUrl" />
             <span v-else>3</span>
           </div>
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('AFC', 'Divisional', afcSeeds[2], afcSeeds[5], afcSeeds[5])">
+          <div class="slot" @click="bracketUnlocked && afcSeeds[2] && afcSeeds[5] && pickMatchupWinner('AFC', 'Divisional', afcSeeds[2], afcSeeds[5], afcSeeds[5])">
             <img v-if="afcSeeds[5]" :src="afcSeeds[5].WikipediaLogoUrl" />
             <span v-else>6</span>
           </div>
         </div>
-        <div class="matchup" v-if="afcSeeds.length">
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('AFC', 'Divisional', afcSeeds[3], afcSeeds[4], afcSeeds[3])">
+        <div class="matchup">
+          <div class="slot" @click="bracketUnlocked && afcSeeds[3] && afcSeeds[4] && pickMatchupWinner('AFC', 'Divisional', afcSeeds[3], afcSeeds[4], afcSeeds[3])">
             <img v-if="afcSeeds[3]" :src="afcSeeds[3].WikipediaLogoUrl" />
             <span v-else>4</span>
           </div>
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('AFC', 'Divisional', afcSeeds[3], afcSeeds[4], afcSeeds[4])">
+          <div class="slot" @click="bracketUnlocked && afcSeeds[3] && afcSeeds[4] && pickMatchupWinner('AFC', 'Divisional', afcSeeds[3], afcSeeds[4], afcSeeds[4])">
             <img v-if="afcSeeds[4]" :src="afcSeeds[4].WikipediaLogoUrl" />
             <span v-else>5</span>
           </div>
@@ -199,32 +199,32 @@
 
       <div class="round">
         <h3>NFC Wild Card</h3>
-        <div class="matchup" v-if="nfcSeeds.length">
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[1], nfcSeeds[6], nfcSeeds[1])">
+        <div class="matchup">
+          <div class="slot" @click="bracketUnlocked && nfcSeeds[1] && nfcSeeds[6] && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[1], nfcSeeds[6], nfcSeeds[1])">
             <img v-if="nfcSeeds[1]" :src="nfcSeeds[1].WikipediaLogoUrl" />
             <span v-else>2</span>
           </div>
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[1], nfcSeeds[6], nfcSeeds[6])">
+          <div class="slot" @click="bracketUnlocked && nfcSeeds[1] && nfcSeeds[6] && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[1], nfcSeeds[6], nfcSeeds[6])">
             <img v-if="nfcSeeds[6]" :src="nfcSeeds[6].WikipediaLogoUrl" />
             <span v-else>7</span>
           </div>
         </div>
-        <div class="matchup" v-if="nfcSeeds.length">
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[2], nfcSeeds[5], nfcSeeds[2])">
+        <div class="matchup">
+          <div class="slot" @click="bracketUnlocked && nfcSeeds[2] && nfcSeeds[5] && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[2], nfcSeeds[5], nfcSeeds[2])">
             <img v-if="nfcSeeds[2]" :src="nfcSeeds[2].WikipediaLogoUrl" />
             <span v-else>3</span>
           </div>
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[2], nfcSeeds[5], nfcSeeds[5])">
+          <div class="slot" @click="bracketUnlocked && nfcSeeds[2] && nfcSeeds[5] && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[2], nfcSeeds[5], nfcSeeds[5])">
             <img v-if="nfcSeeds[5]" :src="nfcSeeds[5].WikipediaLogoUrl" />
             <span v-else>6</span>
           </div>
         </div>
-        <div class="matchup" v-if="nfcSeeds.length">
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[3], nfcSeeds[4], nfcSeeds[3])">
+        <div class="matchup">
+          <div class="slot" @click="bracketUnlocked && nfcSeeds[3] && nfcSeeds[4] && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[3], nfcSeeds[4], nfcSeeds[3])">
             <img v-if="nfcSeeds[3]" :src="nfcSeeds[3].WikipediaLogoUrl" />
             <span v-else>4</span>
           </div>
-          <div class="slot" @click="bracketUnlocked && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[3], nfcSeeds[4], nfcSeeds[4])">
+          <div class="slot" @click="bracketUnlocked && nfcSeeds[3] && nfcSeeds[4] && pickMatchupWinner('NFC', 'Divisional', nfcSeeds[3], nfcSeeds[4], nfcSeeds[4])">
             <img v-if="nfcSeeds[4]" :src="nfcSeeds[4].WikipediaLogoUrl" />
             <span v-else>5</span>
           </div>
@@ -673,12 +673,12 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 1.5rem;
   margin-top: 3rem;
   width: 100%;
   text-align: center;
   background: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -687,7 +687,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 150px;
+  min-width: 120px;
   position: relative;
 }
 
@@ -695,36 +695,25 @@ export default {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
   text-align: center;
 }
 
 .matchup {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
   position: relative;
-}
-
-.matchup::after {
-  content: '';
-  position: absolute;
-  right: -1.5rem;
-  top: 50%;
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  transform: translateY(-50%);
 }
 
 .slot {
   background: white;
-  border: 2px solid #333;
+  border: 2px solid #000000fb;
   border-radius: 8px;
-  margin: 2px 0;
-  width: 120px;
-  height: 50px;
+  margin: 1px 0;
+  width: 110px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -735,7 +724,7 @@ export default {
 }
 
 .slot:hover {
-  background: #f8f9fa;
+  background: #ffffff;
   border-color: #666;
 }
 
@@ -752,35 +741,35 @@ export default {
 }
 
 .super-bowl {
-  min-width: 200px;
+  min-width: 180px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
-  padding: 1.5rem;
-  border: 3px solid #333;
+  padding: 1rem;
+  border: 3px solid #000000;
 }
 
 .super-bowl h3 {
-  font-size: 1.4rem;
-  color: #333;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 1rem;
 }
 
 .super-bowl-matchup {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .super-bowl-slot {
-  width: 100px;
-  height: 60px;
+  width: 90px;
+  height: 50px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background: white;
-  border: 2px solid #333;
+  border: 2px solid #000000;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -790,7 +779,7 @@ export default {
 }
 
 .super-bowl-slot:hover {
-  background: #f8f9fa;
+  background: #ffffff;
   transform: scale(1.05);
 }
 
@@ -807,47 +796,13 @@ export default {
 .super-bowl-winner h4 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #000000;
 }
 
 .super-bowl-winner .slot {
   background: #fff3cd;
-  border-color: #ffc107;
+  border-color: #ffbf00;
   font-weight: bold;
-}
-
-/* Additional bracket styling for better visual flow */
-.round:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: -1.5rem;
-  top: 50%;
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  transform: translateY(-50%);
-}
-
-.super-bowl::before {
-  content: '';
-  position: absolute;
-  left: -1.5rem;
-  top: 50%;
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  transform: translateY(-50%);
-}
-
-.super-bowl::after {
-  content: '';
-  position: absolute;
-  right: -1.5rem;
-  top: 50%;
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  transform: translateY(-50%);
 }
 
 /* Button Container */

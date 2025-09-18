@@ -52,7 +52,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url('../assets/field4.jpg');
+  background-image: url('../assets/field.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
