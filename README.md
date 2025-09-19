@@ -1,5 +1,40 @@
-# Vue 3 + Vite
+# 🏈 NFL Playoff Predictor
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Um projeto interativo desenvolvido em **Vue.js**, que permite ao usuário montar e visualizar a simulação dos playoffs da NFL, escolhendo os vencedores desde o **Wild Card** até o **Super Bowl**.  
+Além disso, é possível visualizar informações detalhadas de cada time da liga.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## ⚙️ Funcionalidades
+
+- 📌 **Seleção de Times**: escolha os times que avançam rodada a rodada nos playoffs.  
+- 🏆 **Simulação Completa**: defina os vencedores até o campeão do Super Bowl.  
+- 📊 **Visualização Organizada**: layout em forma de chaveamento (bracket).
+- 📖 **Detalhes dos Times**: tela que mostra informações detalhadas de cada time da NFL.  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Vue.js 3
+- Vue Router
+- Vite
+- Axios 
+- Tailwind CSS
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clonar o repositório
+git clone [URL_DO_REPOSITORIO]
+cd nfl
+
+### 2. Instalar as dependências
+npm install
+
+### 3. Iniciar o servidor
+npm run dev
+
+### 4. Acessar a aplicação
+http://localhost:5173   
