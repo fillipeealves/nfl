@@ -27,14 +27,18 @@ Além disso, é possível visualizar informações detalhadas de cada time da li
 ## 🚀 Como Executar o Projeto
 
 ### 1. Clonar o repositório
+```bash
 git clone [URL_DO_REPOSITORIO]
 cd nfl
 
 ### 2. Instalar as dependências
+```bash
 npm install
 
 ### 3. Iniciar o servidor
+```bash
 npm run dev
 
 ### 4. Acessar a aplicação
-http://localhost:5173   
+```bash
+http://localhost:5173
