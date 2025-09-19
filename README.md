@@ -30,15 +30,19 @@ Além disso, é possível visualizar informações detalhadas de cada time da li
 ```bash
 git clone [URL_DO_REPOSITORIO]
 cd nfl
+```
 
 ### 2. Instalar as dependências
 ```bash
 npm install
+```
 
 ### 3. Iniciar o servidor
 ```bash
 npm run dev
+```
 
 ### 4. Acessar a aplicação
 ```bash
 http://localhost:5173
+```
