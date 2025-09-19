@@ -36,7 +36,7 @@ export default {
     },
     teamTertiaryColor() {
       const color = this.team.TertiaryColor;
-      if (!color) return "#000000";
+      if (!color) return "#FFFFFF";
       return color.startsWith("#") ? color : `#${color}`;
     },
     teamQuaternaryColor() {

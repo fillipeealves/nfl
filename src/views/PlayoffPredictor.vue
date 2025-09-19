@@ -14,7 +14,10 @@
                 class="team-card"
                 :class="{ selected: isSelected('AFC', team.TeamID) }"
                 :style="isSelected('AFC', team.TeamID)
-                  ? { backgroundColor: '#' + team.PrimaryColor }
+                  ? {
+                      backgroundColor: '#' + team.PrimaryColor,
+                      color: team.SecondaryColor ? (team.SecondaryColor.startsWith('#') ? team.SecondaryColor : '#' + team.SecondaryColor) : '#fff'
+                    }
                   : {}"
                 @click="toggleSelection('AFC', division, team)"
               >
@@ -38,7 +41,10 @@
                 class="team-card"
                 :class="{ selected: isSelected('NFC', team.TeamID) }"
                 :style="isSelected('NFC', team.TeamID)
-                  ? { backgroundColor: '#' + team.PrimaryColor }
+                  ? {
+                      backgroundColor: '#' + team.PrimaryColor,
+                      color: team.SecondaryColor ? (team.SecondaryColor.startsWith('#') ? team.SecondaryColor : '#' + team.SecondaryColor) : '#fff'
+                    }
                   : {}"
                 @click="toggleSelection('NFC', division, team)"
               >
@@ -560,6 +566,29 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Add font-family to all major containers for inheritance */
+.conferences-container,
+.conference,
+.team-grid,
+.division-row,
+.team-cards,
+.team-card,
+.selection-count,
+.bracket,
+.round,
+.matchup,
+.slot,
+.super-bowl,
+.super-bowl-matchup,
+.super-bowl-slot,
+.super-bowl-winner,
+.button-container,
+.confirm-button,
+.clear-button {
+  font-family: inherit;
 }
 
 .conferences-container {
